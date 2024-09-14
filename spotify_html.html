@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="spotify_css.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Spotify</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Search</li>
+                <li>Your Library</li>
+            </ul>
+        </div>
+
+        <div class="music-container">
+            <h2>Albums</h2>
+            <div class="album-grid">
+                <div class="album" id="album1" onclick="playSong('song1.mp3', 'Song 1', 'Artist 1', 'assets/image1.jpg')">
+                    <img src="assets/image1.jpg" alt="Album 1">
+                    <p>Album 1</p>
+                </div>
+                <div class="album" id="album2" onclick="playSong('song2.mp3', 'Song 2', 'Artist 2', 'assets/image2.jpg')">
+                    <img src="assets/image2.jpg" alt="Album 2">
+                    <p>Album 2</p>
+                </div>
+                <div class="album" id="album3" onclick="playSong('song3.mp3', 'Song 3', 'Artist 3', 'assets/image3.jpg')">
+                    <img src="assets/image3.jpg" alt="Album 3">
+                    <p>Album 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <div class="current-song">
+            <img src="assets/image1.jpg" alt="Current Song" class="current-song-cover" id="current-song-cover">
+            <div class="song-info">
+                <h3 id="current-song-title">Song Title</h3>
+                <p id="current-artist-name">Artist Name</p>
+            </div>
+        </div>
+        <audio id="audio-player" controls >
+            <source src="assets/song1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+       
+        <div class="controls">
+            <button id="prev-button">⏮️</button>
+            <button id="play-pause-button">⏯️</button>
+            <button id="next-button">⏭️</button>
+        </div>
+    </div>
+
+    <script src="spotify_js.js"></script>
+</body>
+</html>
