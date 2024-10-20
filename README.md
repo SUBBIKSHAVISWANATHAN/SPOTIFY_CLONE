@@ -23,4 +23,4 @@ FUTURE IMPROVEMENTS:
 Enhanced Functionality: Add features like playlists, user accounts, and streaming capabilities.
 API Integration: Integrate with a real music API to fetch and play actual music tracks.
 
- [file:///C:/Users/subbi/OneDrive/Desktop/Spotify%20clone/spotify_html.html]
+ <a href - "file:///C:/Users/subbi/OneDrive/Desktop/Spotify%20clone/spotify_html.html">Click here </a>
